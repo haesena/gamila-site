@@ -1,28 +1,68 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="de">
-    <head>
-        <title>Gamila</title>
-        <style>
-            .container {
-                font-family: arial,sans-serif;
-                font-size: 24px;
-                color: black;
-                margin: 25px;
-                width: 100%;
-                height: 200px;
-            }
+  <head>
+    <link href="./main.css" rel="stylesheet"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamila Verlag</title>
 
-            .center {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="center">
-                <h1>Under construction</h1>
-                <p>This website is under construction. Please come back soon!</p>
-            </div>
+    <!-- Redirect immediately to German index.html-->
+    <meta http-equiv="refresh" content="0; url=./DE/index.html" />
+  </head>
+
+  <body>
+
+    <header>
+
+      <a href="index.html" class="homelink">
+        <div id="Logo_and_Name" onscroll="scrollFunction()" onresize="resizeFunction()">
+          <div></div>
+          <img src="./Images/GamilaLogo.svg" id="headerlogo"/>
+          <h1 id="CompanyName">Gamila</h1>
+          <div id="languagemenu">
+            <div class="languagelink"><a href="./DE/index.html">Deutsch</a></div>
+            <div class="languagelink"><a href="./EN/index.html">English</a></div>
+            <div class="languagelink"><a href="./FR/index.html">Français</a></div>
+          </div>
+
+
+  
+
         </div>
-    </body>
+
+      </a>
+
+      <nav id="navbar">
+        <a href="javascript:void(0);"  class="icon" onclick="showMenu()">
+          <i id="icon" class="fa fa-bars"></i>
+        </a>
+
+
+
+      </nav>
+
+    </header>
+
+    <main >
+      <!-- In case of refresh not working, link to the index.html in each language folder:-->
+      <div class="languagechoicebeginning">
+      <h2>Sprache / Language / Langue:</h2>
+      <ul>
+        <li><a href="./DE/index.html">Deutsch</a></li>
+        <li><a href="./EN/index.html">English</a></li>
+        <li><a href="./FR/index.html">Français</a></li>
+     </ul>
+    </div>
+    </main>
+
+  </body>
+
+
+
+
+
+
+  <footer>
+    <script src="../script.js"></script>
+  </footer>
 </html>

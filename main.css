@@ -1,0 +1,451 @@
+
+/* fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*font awesome (for bar icon)*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+
+
+
+:root {
+  --backgroundcolor: rgb(255,255,255);
+  --color2: rgb(170,15,15);
+  --titleserif: "Libre Caslon Text";
+  --sansserif: "Figtree";
+  --serif: "Libre Baskerville";
+  --maincolor: black;
+  --textsize: calc(10px + 0.25vw);
+}
+
+html {
+  padding: 0 20px;
+  color: var(--maincolor);
+  box-sizing: border-box;
+}
+
+h1 {
+  scroll-margin-top: 160px;
+  padding-top: 10px;
+}
+
+h2 {
+  font-family: var(--sansserif);
+  font-weight: normal;
+}
+
+p {
+  font-size: var(--textsize);
+}
+h3 {
+  font-size: var(--textsize);
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  font-family: var(--serif);
+  background-color: var(--backgroundcolor);
+}
+
+header {
+  margin: 0;
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  background-color: var(--backgroundcolor);
+  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  border-bottom: 2px solid var(--maincolor);
+}
+
+#navbar {
+  font-size: calc(12px + 0.7vw);
+}
+
+nav ul {
+  margin-left: -39px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-family: var(--sansserif), sans-serif;
+  font-weight: normal;
+}
+
+.homelink {
+  text-decoration: none;
+  color: var(--maincolor);
+}
+
+.nav-link {
+  color: var(--maincolor);
+  text-decoration: none;
+  width: 30%;
+  padding-top: 2px var(--maincolor);
+  border-top: solid 1px var(--maincolor);
+  border-bottom: solid 1px var(--maincolor);
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+
+.nav-link:hover, .nav-link:active {
+  color: var(--color2);
+  border-top: solid 2px var(--color2);
+  border-bottom: solid 1px var(--color2);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.icon {
+  display: none;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+}
+
+#navbar a.icon {
+  color: var(--maincolor);
+}
+
+#navbar a.icon:hover {
+  color: var(--color2);
+}
+
+
+.sub-link, .sub-link:hover {
+  border-top: none;
+  border-bottom: none;
+  font-size: calc(10px + 0.5vw);
+  margin: 0;
+}
+
+.sub-link:hover {
+  margin-bottom: 0;
+}
+
+  
+#Logo_and_Name {
+  display: flex;
+  justify-content: space-between;
+  align-items: bottom;
+  gap: 2vw;
+  padding-bottom: 10px;
+  border-bottom: solid 4px var(--maincolor);
+  left: 10vw;
+}
+
+#languagemenu {
+  font-family: var(--sansserif);
+  text-align: center;
+  display: flex;
+  gap: 3vw;
+}
+
+.languagelink {
+  border-top: solid 1px black;
+}
+
+.languagelink a:hover {
+  color: var(--color2);
+  border-top: solid 1px var(--color2);
+}
+
+.languagelink a {
+  color: black;
+  text-decoration: none;
+}
+
+#CompanyName {
+  display: inline-block;
+  font-family: var(--titleserif);
+  font-size: 100px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#headerlogo {
+  height: 100px;
+  margin-right: 2vw;
+  position: relative;
+  top: 0.4vw;
+  fill: #FFF;
+}
+
+.activesubpage {
+  color: var(--color2);
+  border-top: solid 2px var(--color2);
+  border-bottom: solid 1px var(--color2);
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+
+#indexLogo {
+  height: 15vw;
+  display: block;
+  margin: 10px auto;
+}
+
+
+main {
+  padding-top: 250px;
+  width: 70%;
+  margin: 10px auto;
+  text-align: justify;
+}
+
+main h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+
+/*Author List Formatting */
+.author {
+  border-top: solid 1px var(--maincolor);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: 1fr 250px;
+  grid-template-rows: auto 1fr;
+}
+
+.author_name {
+  grid-column: 1 / 2;
+  text-align: center;
+}
+
+.author_pic {
+  grid-column: 2 / span 1;
+  grid-row: 2 / 3;
+  justify-self: left;
+  align-self: top;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.author_description {
+  margin-top: -15px;
+  grid-column: 1 /  span 1;
+}
+
+#booksmain {
+  width: 100%;
+}
+
+#bookcontainer {
+  display: grid;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 25px;
+  grid-template-columns: repeat(3,30%);
+  margin-left:0;
+}
+
+.bookcover {
+  width: 100%;
+}
+
+/*
+img.comingsoon {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}*/
+
+
+.bookpagegrid {
+  display: grid;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 25px;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.bookpagecover {
+  width: 100%;
+}
+
+.bookpagedescription {
+  grid-column: 2 / -1;
+}
+
+.bookpageauthor {
+  text-align: left;
+  font-size: 25px;
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+.bookpagetitle {
+  font-size: 25px;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 0;
+
+}
+
+.booklink-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px 2vw;
+  align-items: center;
+}
+
+.booklink img {
+  width: 100%;
+}
+
+.languagechoicebeginning {
+  margin-top: 50px;
+  text-align: center !important;
+  list-style-position: inside;
+}
+
+.languagechoicebeginning ul {
+  position: relative;
+  left: -20px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+  .author {
+    grid-template-columns: 1fr 20vw;
+  }
+
+
+  .author_pic {
+    height: 20vw;
+    width: 20vw;
+  }
+  #CompanyName {
+    font-size: 9vw;
+  }
+  #headerlogo {
+    height: 9vw;
+  }
+
+
+
+}
+
+
+/*MOBILE*/
+
+@media only screen and (max-width: 700px) {
+  main {
+    width: 100%;
+    padding-top: 160px;
+  }
+  main h1 {
+    font-size: 26px;
+  }
+  .author {
+    display: block;
+    text-align: center;
+  }
+  .author_name {
+    text-align: center;
+    justify-self: center;
+  }
+  .author_pic {
+    width: 70%;
+    height: 70%;
+    margin-bottom: 10px;
+  }
+  .author_description {
+    text-align: justify;
+  }
+
+  nav ul  {
+    display: none;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    width: 100vw;
+    border-top: none;
+    border-bottom: none;
+  }
+
+
+
+  #navbar {
+    font-size: calc(16px + 0.8vw) !important;
+  }
+
+  .icon {
+    display: block;
+  }
+  
+  #Logo_and_Name {
+    justify-content: center !important;
+  }
+
+  .empty {
+    width: 20vw;
+  }
+
+  #languagemenu {
+    flex-direction: column;
+    position: relative;
+    top: -15px;
+    right: -15vw;
+  }
+
+
+  .nav-link:hover {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 3px;
+  }
+
+  #bookcontainer {
+    grid-template-columns: repeat(2,48%)
+}
+  #subauthornav {
+    display: none;
+  }
+
+  .bookpagegrid {
+    display: block;
+    text-align: center;
+  }
+
+  .bookpagecover {
+    width: 50%;
+  }
+
+  .bookpageauthor, .bookpagetitle {
+    text-align: center;
+  }
+
+  .bookpagedescription > p {
+    text-align: left;
+  }
+
+  .booklink-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 20px;
+  }
+
+}
+
+
