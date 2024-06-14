@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link href="../../main.css" rel="stylesheet"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamila Verlag</title>
+  </head>
+
+  <body>
+
+    <header>
+
+      <a href="../index.html" class="homelink">
+        <div id="Logo_and_Name" onscroll="scrollFunction()" onresize="resizeFunction()">
+          <img src="../../Images/GamilaLogo.svg" id="headerlogo"/>
+          <h1 id="CompanyName">Gamila</h1>
+
+          <div id="languagemenu">
+            <div class="languagelink"><a href="../../EN/books/books.html">English</a></div>
+            <div class="languagelink"><a href="../../FR/livres/livres.html">Français</a></div>
+          </div>
+  
+
+        </div>
+
+      </a>
+
+      <nav id="navbar">
+        <a href="javascript:void(0);"  class="icon" onclick="showMenu()">
+          <i id="icon" class="fa fa-bars"></i>
+        </a>
+        <ul>
+          <a class="nav-link" href="../personen.html" id="personen"><li>Personen</li></a>
+          <a class="nav-link activesubpage" href="../buecher/buecher.html" id="buecher"><li>Bücher</li></a>
+          <a class="nav-link" href="../verlag.html" id="verlag"><li>Verlag</li></a>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main id="booksmain">
+
+      <div id="bookcontainer">
+
+        <a href="./hamas.html"><img src="../../Images/HamasCover.png" class="bookcover"/></a>
+
+        <a href="./granada.html"><img src="../../Images/TheLastDaysOfGranadaCoverImage.jpg" class="bookcover"/> </a>
+
+        <a href="./SWDSD.html"><img src="../../Images/SWDSDCover.jpg" class="bookcover"/></a>
+      
+        
+      </div>
+      <h2>Demnächst:</h2>
+      <div id="bookcontainer">
+
+
+        <img  src="../../Images/BefreiungInDenStaatCover.png" class="bookcover comingsoon"/>
+
+        <img src="../../Images/DieFrauUndSexCover.png" class="bookcover comingsoon"/>
+
+      </div>
+
+    </main>
+
+  </body>
+
+
+
+
+
+
+  <footer>
+    <script src="../../script.js"></script>
+  </footer>
+</html>
